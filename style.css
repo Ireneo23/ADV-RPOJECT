@@ -573,3 +573,50 @@ footer .footer-end a:hover{
       max-width: 700px; /* Adjust width for extra large devices */
   }
 }
+
+.about{
+  width: 100%;
+  padding: 78px 0;
+  background-color: #CFE8EF;
+
+}
+.about img{
+  height: auto;
+  width: 420px;
+}
+
+.about-text{
+  width: 550px;
+}
+
+.main{
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-img {
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
+  border-radius: 12px;
+ 
+}
+
+.about-text h2{
+  color: #FF7F50;
+  font-size: 50px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+
+}
+.about-text h5{
+  color: #181818;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+  
+  
+}
