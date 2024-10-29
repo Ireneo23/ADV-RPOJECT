@@ -9,7 +9,22 @@
 
 * body{
   background-color: #CFE8EF;
+  animation: transitionIn 0.75s;
 }
+
+
+@keyframes transitionIn{
+  from{
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to{
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+
 *::-webkit-scrollbar-track{
   background-color: transparent;
 }
@@ -21,6 +36,7 @@
 *::-webkit-scrollbar{
   width: 10px;
 }
+
 
 
 .hero-headed{
@@ -398,6 +414,11 @@ footer .footer-end a:hover{
   box-shadow: 0 0 8px rgba(0,0,0,0.5);
   transition: 0.4s;
 }
+@media screen and (max-width: 768px) {
+  .team .team_box .profile {
+    margin: 0 auto; /* Center the profile box horizontally */
+  }
+}
 
 .team .team_box .profile:hover{
   border-radius: 18px;
@@ -618,5 +639,6 @@ footer .footer-end a:hover{
   margin-bottom: 25px;
   letter-spacing: 2px;
   
-  
 }
+
+
