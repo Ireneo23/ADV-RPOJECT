@@ -58,16 +58,6 @@ body h1, h2{
   color: #FF7F50;
 }
 
-
-.heart-icon {
-  color: inherit; /* Use the inherited color by default */
-  transition: color 0.3s ease; /* Smooth transition for color change */
-}
-
-.heart-icon, .dropdown-item:hover {
-  color: #FF7F50; /* Change the color to orange on hover */
-}
-
 .nav-item .nav-icon span{
   color: white;
   width: 28px;
@@ -122,9 +112,9 @@ body h1, h2{
 
 
 /* mav-link effect*/
-.nav-link{
+.nav-link, .heart-icon{
   text-decoration: none;
-  color: #000;
+  color: #707070;
   font-weight: 500;
   font-size: 17px;
   transition: 0.1s;
@@ -143,6 +133,13 @@ body h1, h2{
 }
 
 .nav-link:hover{
+  color: #FF7F50;
+}
+.dropdown-item:hover{
+  color: #FF7F50;
+}
+
+.heart-icon:hover{
   color: #FF7F50;
 }
 /* mav-link effect End*/

@@ -23,52 +23,53 @@
     </head>
 
     <body>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top custom-shadow">
-        <div class="container-fluid fs-5 nav-text">
-            <img src="img/projectlogo.svg" alt="Logo" width="70" height="60" class="d-inline-block align-text-top animate__animated animate__bounce animate__delay-1s ms-5" id="logo">
-            <a class="navbar-brand me-auto" href="#">
-                <span class="food">Food</span>
-                <span class="rep">Rep</span>
-            </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-            </button>
-            <div class="collapse navbar-collapse me-5" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-start">
-                    <li class="nav-item ps-4 pt-2">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown ps-4 pt-2" onmouseover="this.querySelector('.dropdown-menu').classList.add('show')" onmouseout="this.querySelector('.dropdown-menu').classList.remove('show')">
-                        <a class="nav-link dropdown-toggler active"  id="active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recipes<i class="fa-solid fa-caret-down ps-2"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="recipe.html">All Recipes</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Breakfast</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="lunch.html">Lunch</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="dinner.html">Dinner</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="dessert.html">Dessert</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item ps-4 pt-2">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item ps-4 pt-2 pe-5">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-icon" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFavorites" aria-controls="offcanvasFavorites">
-                            <button type="button" class="btn nav-link active fs-6" aria-pressed="true"><i class="fa-regular fa-heart heart-icon" style="font-size: 24px;"></i></button>
-                            <span class="fs-6 fa-icon" id="favorite-count">0</span>
-                        </a>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top custom-shadow">
+            <div class="container-fluid fs-5 nav-text">
+                <img src="img/projectlogo.svg" alt="Logo" width="70" height="60" class="d-inline-block align-text-top animate__animated animate__bounce animate__delay-1s ms-5" id="logo">
+                <a class="navbar-brand me-auto" href="#">
+                    <span class="food">Food</span>
+                    <span class="rep">Rep</span>
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-start text-center"> <!-- Center the links -->
+                        <li class="nav-item ps-4 pt-2">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown ps-4 pt-2" onmouseover="this.querySelector('.dropdown-menu').classList.add('show')" onmouseout="this.querySelector('.dropdown-menu').classList.remove('show')">
+                            <a class="nav-link dropdown-toggler active" id="active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recipes<i class="fa-solid fa-caret-down ps-2"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="recipe.html">All Recipes</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Breakfast</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="lunch.html">Lunch</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="dinner.html">Dinner</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="dessert.html">Dessert</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ps-4 pt-2">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item ps-4 pt-2 pe-5">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto align-items-start me-5"> <!-- Move the navigation icon to the right end -->
+                        <li class="nav-item">
+                            <a class="nav-icon" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFavorites" aria-controls="offcanvasFavorites">
+                                <button type="button" class="btn nav-link active fs-6" aria-pressed="true"><i class="fa-regular fa-heart heart-icon" style="font-size: 24px;"></i></button>
+                                <span class="fs-6 fa-icon" id="favorite-count">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
 <!--Code Here!!!! Sugud-->
 
