@@ -237,5 +237,23 @@ document.addEventListener('DOMContentLoaded', function() {
     instructionsList.appendChild(li);
   });
 }
+
+
+let star = document.querySelectorAll('input');
+let showValue = document.querySelector('#rating-value');
+
+for (let i = 0; i < star.length; i++) {
+	star[i].addEventListener('click', function() {
+		i = this.value;
+		showValue.innerHTML = i + " stars rating";
+		if(i == 1){
+			showValue.innerHTML = i + " star rating";
+		}
+	});
+}
+
+
+
+
   });
   

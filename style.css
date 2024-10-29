@@ -362,7 +362,6 @@ footer .footer-end a:hover{
 
 
 /* css for simultinuous adjustment of the cards*/
-
 .card-title, .card-text {
   white-space: nowrap;
   overflow: hidden;
@@ -641,4 +640,69 @@ footer .footer-end a:hover{
   
 }
 
+
+/*Rating*/
+.container-rating{
+	display: flex;
+	font-family: "Roboto", sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rating-wrap{
+	max-width: 250px;
+}
+
+.center-rating{
+	width: 162px; 
+	margin: auto;
+}
+
+
+
+/*styling star rating*/
+.rating{
+	border: none;
+	float: left;
+}
+
+.rating > input{
+	display: none;
+}
+
+.rating > label:before{
+	content: '\f005';
+	font-family: FontAwesome;
+	margin: 5px;
+	font-size: 1.2rem;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.rating > .half:before{
+	content: '\f089';
+	position: absolute;
+	cursor: pointer;
+}
+
+
+.rating > label{
+	color: #ddd;
+	float: right;
+	cursor: pointer;
+}
+
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover, 
+.rating:not(:checked) > label:hover ~ label{
+	color: #FF7F50;
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label{
+	color: #FF7F50;
+}
 
