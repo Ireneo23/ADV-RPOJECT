@@ -238,22 +238,30 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 }
 
-
-let star = document.querySelectorAll('input');
-let showValue = document.querySelector('#rating-value');
-
-for (let i = 0; i < star.length; i++) {
-	star[i].addEventListener('click', function() {
-		i = this.value;
-		showValue.innerHTML = i + " stars rating";
-		if(i == 1){
-			showValue.innerHTML = i + " star rating";
-		}
+document.querySelectorAll('.stars').forEach(stars => {
+	stars.addEventListener('click', function (e) {
+	  if (e.target.classList.contains('star')) {
+		const rating = parseFloat(e.target.getAttribute('data-rating'));
+		const item = stars.getAttribute('data-item');
+		setRating(item, rating);
+		displayRating(item, rating);
+	  }
 	});
-}
-
-
-
+  });
+  
+  function setRating(item, rating) {
+	const stars = document.querySelectorAll(`.stars[data-item="${item}"] .star`);
+	
+	stars.forEach(star => {
+	  const starRating = parseFloat(star.getAttribute('data-rating'));
+	  star.classList.toggle('selected', starRating <= rating);
+	});
+  }
+  
+  function displayRating(item, rating) {
+	document.getElementById(`rating-${item}`).textContent = `Rating: ${rating}`;
+  }
+  
 
   });
   
