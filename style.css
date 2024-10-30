@@ -8,7 +8,7 @@
 
 
 * body{
-  background-color: #CFE8EF;
+  background-image: url(img/backgroundcanva.png);
   animation: transitionIn 0.75s;
 }
 
@@ -321,7 +321,7 @@ footer .footer-end a:hover{
 
 .offcanvas-body {
   padding: 1.5rem;
-  background-color: #CFE8EF;
+  background-image: url(img/backgroundcanva.png);
 }
 
 .offcanvas-end {
@@ -334,7 +334,7 @@ footer .footer-end a:hover{
 }
 .modal-body {
   text-align: left;
-  background-color: #CFE8EF;
+  background-image: url(img/backgroundcanva.png);
 }
 
 .social-icon {

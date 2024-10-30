@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     </head>
-    <body>
+    <body style="background-image: url(img/blueback.png);">
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top custom-shadow">
         <div class="container-fluid fs-5 nav-text">
@@ -71,9 +71,11 @@
         </div>
     </nav>
        <!--firs row-->
+
+      
     <div class="container mt-5">
       <div id="recipe-list" class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 card-rep">
           <div class="card">
             <img src="img/lunch2.png" class="card-img-top" alt="Recipe 1" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Pork Tocino', 'img/lunch2.png', ['500g/ 1 lb of Chicken Meat', '20 slices white sandwich bread', 'Sour cream', 'Walnuts Best substitute – cashews, macadamia nuts or pecans. Else, leave it out.', 'Fresh dill', 'Pickles', '1 Celery and 1 green onion ', 'garlic, salt, pepper', 'Lemon juice ', 'Dijon mustard'], 
             ['Remove flesh off the chicken and remove the skin.', 
@@ -584,8 +586,8 @@
     <div class="modal fade" id="recipeDetailsModal" tabindex="-1" aria-labelledby="recipeDetailsModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-scrollable modal-xl">
           <div class="modal-content">
-              <div class="modal-header">
-                  <h5 class="modal-title" style="color: #E96419;" id="recipeDetailsModalLabel">Recipe Details</h5>
+              <div class="modal-header" style="background-color: #FF7f50;">
+                  <h5 class="modal-title" style="color: whitesmoke;" id="recipeDetailsModalLabel">Recipe Details</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
