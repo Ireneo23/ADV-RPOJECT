@@ -569,6 +569,9 @@ footer .footer-end a:hover{
   text-align: center; /* Center text inside the container */
   padding: 0 15px; /* Add padding to the sides */
 }
+.custom-container h1{
+  padding-top: 100px;
+}
 
 @media (min-width: 576px) {
   .custom-container {
@@ -675,4 +678,28 @@ footer .footer-end a:hover{
     font-style: italic;
     font-weight: 600;
     }
-    
+
+
+    /*contact us*/
+  
+    .contact-us-section {
+      background-image:url(img/blueback.png);
+
+  }
+  .contact-us-section .text-center{
+    padding-top: 100px;
+  }
+
+  form .btn{
+    background-color: #E96419;
+    color: #f9f9f9;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  form .btn:hover{
+    background-color: #b84706;
+    color: #f9f9f9;
+  }
+
+
+

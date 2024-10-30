@@ -249,6 +249,8 @@ document.querySelectorAll('.stars').forEach(stars => {
 	});
   });
   
+
+  //star rating
   function setRating(item, rating) {
 	const stars = document.querySelectorAll(`.stars[data-item="${item}"] .star`);
 	
@@ -261,6 +263,35 @@ document.querySelectorAll('.stars').forEach(stars => {
   function displayRating(item, rating) {
 	document.getElementById(`rating-${item}`).textContent = `Rating: ${rating}`;
   }
+
+//contact us
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  // Fetch form values
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const subject = document.getElementById("subject").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  // Simple validation
+  if (name === "" || email === "" || message === "") {
+      alert("Please fill out all fields.");
+      return;
+  }
+
+  // Log form values (or send to server)
+  console.log("Form Submitted:", { name, email, subject, message });
+
+  // Show toast notification
+  const successToast = new bootstrap.Toast(document.getElementById("successToast"));
+  successToast.show();
+
+  // Clear form fields
+  document.getElementById("contactForm").reset();
+});
+
+
   
 
   });
