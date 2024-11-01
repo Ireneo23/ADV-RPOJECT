@@ -683,7 +683,7 @@ footer .footer-end a:hover{
     /*contact us*/
   
     .contact-us-section {
-      background-image:url(img/blueback.png);
+    margin-bottom: rem;
 
   }
   .contact-us-section .text-center{
@@ -701,5 +701,6 @@ footer .footer-end a:hover{
     color: #f9f9f9;
   }
 
+/*alert*/
 
 

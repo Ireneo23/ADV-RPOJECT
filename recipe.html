@@ -20,8 +20,9 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    </head>
-    <body style="background-image: url(img/blueback.png);">
+    
+      </head>
+    <body>
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top custom-shadow">
         <div class="container-fluid fs-5 nav-text">
@@ -72,6 +73,42 @@
     </nav>
        <!--firs row-->
 
+       <div class="container-xxl py-5 mt-5">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6 hover-opacity">
+              <div class="row g-3  custom-img">
+                  <div class="col-6 text-start">
+                      <img class="img-fluid rounded w-100 shadow-effect" src="img/champorado.png" alt="image" >
+                  </div>
+                  <div class="col-6 text-start">
+                    <img class="img-fluid rounded w-75 shadow-effect" style="margin-top: 25%;" src="img/breakfast1.png" alt="image">
+                  </div>
+                  <div class="col-6 text-end">
+                    <img class="img-fluid rounded w-75 shadow-effect"  src="img/omelette.png" alt="image">
+                  </div>
+                  <div class="col-6 text-start">
+                    <img class="img-fluid rounded w-100 shadow-effect" src="img/toast.png" alt="image" >
+                </div>  
+              </div>
+            </div>
+            <!--Images-end-->
+            <div class="col-lg-6 bg-white p-3 rounded custom-shadow">
+              <!--About-section-->
+              <h1 class="mb-4">Welcome to
+                <img class="logo-image" src="img/projectlogo.svg" height="80" width="100" alt="logo">
+              <span class="text-orange">Food</span>
+              <span class="text-black">Rep</span>
+          </h1> 
+          <p class="mb-4 fs-2" style="font-family: Roboto, sans-serif;">
+            Authentic Filipino breakfast flavors
+          </p> 
+            <a href="breakfast.html" class="btn draw-border py-3 px-5 mt-2">breakfast recipes</a>
+          </div>
+          </div>
+        </div>          
+      </div>
+
       
     <div class="container mt-5">
       <div id="recipe-list" class="row">
@@ -108,13 +145,13 @@
               </div>
 
 
-              <div class="d-flex justify-content-center add-favorite">
-                <button class="btn btn-outline-danger p-2">
+              <div class="d-flex justify-content-center add-favorite" id="liveAlertPlaceholder">
+                <button class="btn btn-outline-danger p-2" id="liveAlertBtn">
                   <i class="fa fa-heart" onclick="showToast(successMsg)"></i> Add to Favorite
                 </button>
               </div>
             </div>
-          </div>
+          </div>  
         </div>
   
         <div class="col-md-3">
@@ -230,6 +267,48 @@
           </div>
         </div>
       </div> <!--first row end-->
+
+
+      <div class="container" style="background-color:#CFE8EF; border-radius: 8px; padding: 2rem;">
+        <div class="row g-3">
+          <h4 class="text-center">lunch</h4>
+          <div class="col-lg-6 hover-opacity">
+            <div class="row g-3  custom-img">
+                <div class="col-6 text-start">
+                    <img class="img-fluid rounded w-100 shadow-effect" src="img/champorado.png" alt="image" >
+                </div>
+                <div class="col-6 text-start">
+                  <img class="img-fluid rounded w-75 shadow-effect" style="margin-top: 25%;" src="img/breakfast1.png" alt="image">
+                </div>
+                <div class="col-6 text-end">
+                  <img class="img-fluid rounded w-75 shadow-effect"  src="img/omelette.png" alt="image">
+                </div>
+                <div class="col-6 text-start">
+                  <img class="img-fluid rounded w-100 shadow-effect" src="img/toast.png" alt="image" >
+              </div>  
+            </div>
+          </div>
+          <div class="col-lg-6 hover-opacity ">
+            <div class="row g-3  custom-img">
+                <div class="col-6 text-start">
+                    <img class="img-fluid rounded w-75 shadow-effect" style="margin-left: 25%; margin-top: 25%;" src="img/champorado.png" alt="image" >
+                </div>
+                <div class="col-6 text-start">
+                  <img class="img-fluid rounded w-100 shadow-effect" src="img/breakfast1.png" alt="image">
+                </div>
+                <div class="col-6 text-end">
+                  <img class="img-fluid rounded w-100 shadow-effect"  src="img/omelette.png" alt="image">
+                </div>
+                <div class="col-6 text-start">
+                  <img class="img-fluid rounded w-75 shadow-effect" src="img/toast.png" alt="image" >
+                  <a href="breakfast.html" class="btn draw-border mt-3 w-75">Lunch</a> 
+                  
+              </div> 
+              
+            </div>
+          </div>
+        </div>
+      </div>
 
 
 
@@ -535,6 +614,9 @@
         </div>
       </div> <!--third row end-->
     </div>
+   
+
+   
 
  <!--Modal for the recipe list-->
  <div class="modal fade" id="recipesModal" tabindex="-1" aria-labelledby="recipesModalLabel" aria-hidden="true">
@@ -603,6 +685,9 @@
   </div>
 
 
+  
+
+
   <!--Script for the modal recipe list-->
   <script>
     function showRecipeDetails(title, imageSrc, ingredients, instructions) {
@@ -631,6 +716,9 @@
     
 
         <script src="main.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.0/swiper-bundle.min.js"></script>
+    
 
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

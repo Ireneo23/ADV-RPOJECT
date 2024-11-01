@@ -271,7 +271,6 @@ document.getElementById("contactForm").addEventListener("submit", function(event
   // Fetch form values
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
-  const subject = document.getElementById("subject").value.trim();
   const message = document.getElementById("message").value.trim();
 
   // Simple validation
@@ -281,7 +280,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
   }
 
   // Log form values (or send to server)
-  console.log("Form Submitted:", { name, email, subject, message });
+  console.log("Form Submitted:", { name, email, message });
 
   // Show toast notification
   const successToast = new bootstrap.Toast(document.getElementById("successToast"));
@@ -292,7 +291,6 @@ document.getElementById("contactForm").addEventListener("submit", function(event
 });
 
 
-//slider
-
+//add alert
   });
   
